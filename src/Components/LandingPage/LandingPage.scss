@@ -59,7 +59,7 @@ $text: #2C2E3F;
             
                 .exploreBtn{
                     position: absolute;
-                    bottom: 0%;
+                    bottom: .2%;
                     right: 0%;
                     width: 100%;
                     height: 25%;
@@ -79,70 +79,12 @@ $text: #2C2E3F;
                     // background: green;
                 }
             }
-        }
-        
-    }
-
-    .three-up-container{
+        } 
+    } 
+    .three-up-wrapper{
         width: 100%;
-        margin-top: 100px;
         display: flex;
         justify-content: space-between;
-        // background: yellow;
-
-        .method-of-action, .efficacy, .safety{
-            width: 31%;
-            // display: flex;
-            // justify-content: space-around;
-            // flex-direction: column;
-            background: $grey;
-            
-            h2{
-                margin: 20px 0px 10px 20px;
-                font-size: 40px;
-                font-family: $font-med;
-            }
-
-            p{
-                margin: 20px 20px 10px 20px;
-                // height: 50%;
-                font-size: 22px;
-                font-family: $font-reg;
-            }
-
-            .button-wrapper{
-                display: flex;
-                justify-content: center;
-                align-content: flex-end;
-
-                .learn-more{
-                    margin-top: 20px;
-                    bottom: 0px;
-                    height: 50px;
-                    position: relative;
-                    width: 80%;
-                    display: block;
-                    border: none;
-                    background: $orange;
-                    color: $grey;
-                    font-family: $font-bold;
-                    font-size: 12px;
-                }
-            }
-
-
-        }
-
-        // .efficacy{
-        //     width: 28%;
-        // }
-
-        // .safety{
-        //     width: 28%;
-        // }
-        
-        .allergy-image-lowres{
-            width: 100%;
-        }
+        // background: red;
     }
 }
