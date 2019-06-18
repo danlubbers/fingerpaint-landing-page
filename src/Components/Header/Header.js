@@ -7,12 +7,12 @@ export default class Header extends Component {
         return(
             <nav>
                 <ul>
-                    <li>Home</li>
+                    <li className="home">Home</li>
                     <li>Safety</li>
                     <li>Efficacy</li>
                     <li>Dosing</li>
                     <li>Order Samples</li>
-                    <li>Important Safety Imformation</li>
+                    <li>Important Safety Information</li>
                 </ul>
             </nav>
         )

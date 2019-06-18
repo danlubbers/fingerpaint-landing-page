@@ -1,17 +1,19 @@
 @import './Components/Header/Header.scss';
 @import './Components/LandingPage/LandingPage.scss';
-@import './Components/Footer/Footer.scss';
+@import './Components/Footer/Footer';
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 
 // Variables
-
+$font: 'Poppins', sans-serif;
+$orange: #FE7865;
+$grey: #F3F3F3;
+$text: #2C2E3F;
 
 .App {
   width: 100vw;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +21,12 @@
   // background: yellow;
   
   .body{
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 }
 

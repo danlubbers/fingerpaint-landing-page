@@ -3,7 +3,7 @@ import './App.scss';
 
 import Header from './Components/Header/Header';
 import LandingPage from './Components/LandingPage/LandingPage';
-import Footer from './Components/Footer/Footer';
+// import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -16,9 +16,9 @@ function App() {
         <LandingPage />
       </div>
 
-      <Footer>
+      {/* <Footer>
         <Footer />
-      </Footer>
+      </Footer> */}
 
     </div>
   );
