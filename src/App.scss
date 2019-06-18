@@ -1,0 +1,27 @@
+@import './Components/Header/Header.scss';
+@import './Components/LandingPage/LandingPage.scss';
+@import './Components/Footer/Footer.scss';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+// Variables
+
+
+.App {
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // background: yellow;
+  
+  .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

@@ -1,0 +1,17 @@
+.landingpage-container{
+    background: blue;
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .image-container{
+        width: 80vw;
+        height: 40vh;
+        background: url(./assets/brittany-colette-707600-unsplash.jpg) no-repeat;
+        background-size: 1000px;
+        // background-position: 100px 25px;
+    }
+}
