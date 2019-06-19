@@ -4,6 +4,7 @@ import arrow from '../../assets/arrow.svg';
 import ThreeUp from '../ThreeUp/ThreeUp';
 import HeroPanel from '../HeroPanel/HeroPanel';
 import LeadForm from '../LeadForm/LeadForm';
+import ISI from '../ISI/ISI';
 
 
 export default function LandingPage() {
@@ -33,6 +34,10 @@ export default function LandingPage() {
            
             <div className="lead-form-wrapper">
                 <LeadForm />
+            </div>
+
+            <div className="isi-wrapper">
+                <ISI />
             </div>
         </div>
     )
