@@ -9,16 +9,11 @@ $text: #2C2E3F;
 
 .landingpage-container{
     width: 80%;
-    height: 100%;
+    // height: 100%;
     // background: blue;
 
     .image-container{
         position: relative;
-        // width: 80vw;
-        // height: 63vh;
-        // background: url(./assets/brittany-colette-707600-unsplash-resized.jpg) no-repeat;
-        // background-size: 1000px;
-        // background-position: 105% 45%;
 
         .allergy-image{
             margin: auto 0;
@@ -82,33 +77,6 @@ $text: #2C2E3F;
         } 
     } 
 
-    .three-up-wrapper{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        // background: red;
-    }
 
-    .hero-panel-wrapper{
-        margin-top: 50px;
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .isi-wrapper{
-        margin-top: 100px;
-        width: 100%;
-        height: 60%;
-        display: flex;
-        justify-content: flex-start;
-        // align-items: center;
-        flex-direction: column;
-        // background: green;
-
-    }
 
 }

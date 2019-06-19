@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {FaPlus} from 'react-icons/fa/'
 
-export default function ISI() {
+export default class ISI extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = { 
+            showISI: false,
+        }
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState({showISI: !this.state.showISI});
+    }
+
+    render() {
+
+        let {showISI} = this.state;
+
+    let ISIDropDown = showISI ? 'show-ISI show-position' : 'show-ISI';
+
     return(
         <div className="isi-container">
             <div className="h3-container">
@@ -33,4 +53,5 @@ export default function ISI() {
             </div>
         </div>
     )
+    }
 }
