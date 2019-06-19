@@ -81,6 +81,17 @@ $text: #2C2E3F;
                 background: rgb(17, 27, 48)
 
             }
+
+            .terms-conditions{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+                .checkbox{
+                    margin: 20px 10px 0px 0px;
+                }
+            }
         }
 
     }

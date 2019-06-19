@@ -7,10 +7,13 @@ export default class LeadForm extends Component{
 
         this.state = {
             name: '',
-            email: ''
+            email: '',
+            checked: true,
         }
+
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleChangeEmail = this.handleChangeEmail.bind(this);
+        this.handleCheck = this.handleCheck.bind(this);
         this.onClick = this.onClick.bind(this);
     }
 
@@ -26,11 +29,18 @@ export default class LeadForm extends Component{
         })
     }
 
+    handleCheck() {
+        this.setState({checked: !this.state.checked})
+    }
+
     onClick() {
         alert(`        Name: ${this.state.name}
-        Email: ${this.state.email}
+        Email: ${this.state.email}    
+        Checked: ${this.state.checked}
         `)
     }
+
+    
 
 
     render() {
@@ -48,7 +58,10 @@ export default class LeadForm extends Component{
                         <input className="input-email" type="text" placeholder="Email Address" value={this.state.email} onChange={this.handleChangeEmail}/>
                         <button className="sign-up-btn" onClick={this.onClick}>Sign Up Now</button>
 
-                        <p>By subscribing you agree to our Terms & Conditions and Privacy & Cookies Policy.</p>
+                        <div className="terms-conditions">
+                            <input className="checkbox" type="checkbox" onChange={this.handleCheck} defaultChecked={this.state.checked}/>
+                            <p>By subscribing you agree to our Terms & Conditions and Privacy & Cookies Policy.</p>
+                        </div>
                     </div>
                 </div>
 
