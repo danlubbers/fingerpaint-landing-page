@@ -1,0 +1,96 @@
+$font-reg: 'Poppins Regular', sans-serif;
+$font-semi: 'Poppins Semibold', sans-serif;
+$font-med: 'Poppins Medium', sans-serif;
+$font-bold: 'Poppins Bold', sans-serif;
+
+$orange: #FE7865;
+$grey: #F3F3F3;
+$text: #2C2E3F;
+
+.lead-form-container{
+    // margin-left: -175px;
+    width: 100%;
+    background: blue;
+    display: flex;
+
+    .input-container{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $orange;
+
+        .text-container{
+            padding-left: 75px;
+            width: 80%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+
+            h4{
+                margin: 10px 0px 10px 0px;
+                font-family: $font-semi;
+                font-size: 28px;
+                color: $grey;
+            }
+
+            h3{
+                margin: 10px 0px 10px 0px;
+                font-family: $font-semi;
+                font-size: 64px;
+                color: $grey;
+            }
+
+            .white-line{
+                margin: 20px 0px 20px 0px;
+                width: 52%;
+                height: 3px;
+                border-width: 1px;
+                background-color: $grey;
+            }
+
+            p{
+                margin: 20px 0px 60px 0px;
+                font-family: $font-reg;
+                font-size: 14px;
+                color: $grey;
+            }
+
+            .input-name, .input-email{
+                width: 95%;
+                height: 40px;
+                margin: 0px 0px 5px 0px;
+                background: rgb(216, 95, 79);
+                border:none;
+                color: $grey;
+                text-indent: 20px;
+            }
+
+            .input-name::placeholder, .input-email::placeholder{
+                color: $grey;
+            }
+
+            .sign-up-btn{
+                width: 95%;
+                height: 40px;
+                margin: 0px 0px 5px 0px;
+                border:none;
+                color: $grey;
+                text-align: center;
+                background: rgb(17, 27, 48)
+
+            }
+        }
+
+    }
+
+    .allergy-container{
+        width: 100%;
+
+        .allergy-image{
+            width: 100%;
+        }
+    }
+
+}

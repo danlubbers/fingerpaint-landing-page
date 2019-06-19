@@ -1,0 +1,44 @@
+$font-reg: 'Poppins Regular', sans-serif;
+$font-semi: 'Poppins Semibold', sans-serif;
+$font-med: 'Poppins Medium', sans-serif;
+$font-bold: 'Poppins Bold', sans-serif;
+
+$orange: #FE7865;
+$grey: #F3F3F3;
+$text: #2C2E3F;
+
+.hero-panel-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h4{
+        margin:10px;
+        font-family: $font-semi;
+        font-size: 28px;
+    }
+
+    h3{
+        margin:10px;
+        font-family: $font-semi;
+        font-size: 64px;
+    }
+
+    .orange-line{
+        margin: 10px;
+        width: 28%;
+        height: 3px;
+        border-width: 1px;
+        background-color: $orange;
+    }
+
+    p{
+        margin:10px;
+        font-family: $font-reg;
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+
+}

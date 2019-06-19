@@ -2,6 +2,8 @@ import React from 'react';
 import allergyImageResized from '../../assets/brittany-colette-707600-unsplash-resized.jpg';
 import arrow from '../../assets/arrow.svg';
 import ThreeUp from '../ThreeUp/ThreeUp';
+import HeroPanel from '../HeroPanel/HeroPanel';
+import LeadForm from '../LeadForm/LeadForm';
 
 
 export default function LandingPage() {
@@ -23,6 +25,14 @@ export default function LandingPage() {
 
             <div className="three-up-wrapper">
                 <ThreeUp />
+            </div>
+
+            <div className="hero-panel-wrapper">
+                <HeroPanel />
+            </div>
+           
+            <div className="lead-form-wrapper">
+                <LeadForm />
             </div>
         </div>
     )
