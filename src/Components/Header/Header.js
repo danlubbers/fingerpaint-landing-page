@@ -1,18 +1,19 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            ref: createRef()
-        }
         this.handleClick = this.handleClick.bind(this)
     }
 
     handleClick = () => {
-        console.log('ref: ', this.state.ref)
+        // console.log('newRef: ', this.props.children.props.newRef.current)
+        const ISIRef = this.props.children.props.newRef.current;
+        if(ISIRef) {
+            ISIRef.scrollIntoView({behavior: 'smooth', block: 'start'})
+        }
     }
 
 

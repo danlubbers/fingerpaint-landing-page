@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createRef }from 'react';
 import './App.scss';
 
 import Header from './Components/Header/Header';
@@ -9,10 +9,12 @@ import LeadForm from './Components/LeadForm/LeadForm';
 import ISI from './Components/ISI/ISI';
 
 function App() {
+  const newRef = createRef();
+
   return (
     <div className="App">
       <Header>
-        <Header />
+        <Header newRef={newRef}/>
       </Header>
 
       <div className="body">
@@ -31,7 +33,7 @@ function App() {
         <LeadForm />
       </div>
 
-      <div className="isiWrapper">
+      <div ref={newRef} className="isiWrapper">
         <ISI />
       </div>
     </div>

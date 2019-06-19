@@ -18,9 +18,9 @@ export default class ISI extends Component {
 
     render() {
 
-        let {showISI} = this.state;
+        // let {showISI} = this.state;
 
-    let ISIDropDown = showISI ? 'show-ISI show-position' : 'show-ISI';
+    // let ISIDropDown = showISI ? 'show-ISI show-position' : 'show-ISI';
 
     return(
         <div className="isi-container">
