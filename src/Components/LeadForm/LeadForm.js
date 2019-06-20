@@ -35,12 +35,16 @@ export default class LeadForm extends Component{
 
     onClick() {
         if(this.state.name === '' || this.state.email === '') {
-            alert('You must fill out the provided fields for submission')
-        } else {
-            alert(`        Name: ${this.state.name}
-            Email: ${this.state.email}    
-            Checked: ${this.state.checked}
-        `)}
+            alert('You must fill out the provided fields for submission');
+
+        } else if (!/^\S+@\S+\.\S+$/.test(this.state.email)) {
+            alert('You must use valid email syntax!');
+
+            } else { 
+                alert(`        Name: ${this.state.name}
+        Email: ${this.state.email}    
+        Checked: ${this.state.checked}
+            `)};
     }
 
     
