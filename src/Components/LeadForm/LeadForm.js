@@ -34,10 +34,13 @@ export default class LeadForm extends Component{
     }
 
     onClick() {
-        alert(`        Name: ${this.state.name}
-        Email: ${this.state.email}    
-        Checked: ${this.state.checked}
-        `)
+        if(this.state.name === '' || this.state.email === '') {
+            alert('You must fill out the provided fields for submission')
+        } else {
+            alert(`        Name: ${this.state.name}
+            Email: ${this.state.email}    
+            Checked: ${this.state.checked}
+        `)}
     }
 
     

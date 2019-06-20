@@ -8,6 +8,7 @@ export default class Header extends Component {
         this.handleClick = this.handleClick.bind(this)
     }
 
+    // this method scrolls to the reference div that is selected from App.js when user clicks "Important Safety Information" in the NavBar
     handleClick = () => {
         // console.log('newRef: ', this.props.children.props.newRef.current)
         const ISIRef = this.props.children.props.newRef.current;
@@ -30,9 +31,6 @@ export default class Header extends Component {
                     <li>Order Samples</li>
                     <li onClick={this.handleClick}>Important Safety Information</li>
                 </ul>
-            {/* <div ref={this.state.ref}> 
-                <h1>TESTING DIV</h1>
-            </div> */}
             </nav>
 
         )

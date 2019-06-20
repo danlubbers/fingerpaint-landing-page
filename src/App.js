@@ -1,4 +1,4 @@
-import React, { createRef }from 'react';
+import React, { useRef }from 'react';
 import './App.scss';
 
 import Header from './Components/Header/Header';
@@ -9,11 +9,13 @@ import LeadForm from './Components/LeadForm/LeadForm';
 import ISI from './Components/ISI/ISI';
 
 function App() {
-  const newRef = createRef();
+  // Create reference file to DOM assigning to variavle using useRef()
+  const newRef = useRef();
 
   return (
     <div className="App">
       <Header>
+        {/* Passing prop reference file to Header */}
         <Header newRef={newRef}/>
       </Header>
 
@@ -33,6 +35,7 @@ function App() {
         <LeadForm />
       </div>
 
+      {/* Using the reference file to target this div to scroll onclick */}
       <div ref={newRef} className="isiWrapper">
         <ISI />
       </div>

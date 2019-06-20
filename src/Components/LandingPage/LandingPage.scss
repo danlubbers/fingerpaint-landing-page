@@ -24,31 +24,39 @@ $text: #2C2E3F;
         .lead-hero{
             height: 100%;
             width: 35%;
-            padding-left: 20px; 
             position: absolute;
-            z-index: 999;
             top: 0%;
             right: 0%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            background: $grey;
+            z-index: 1;
+            // background: $grey;
             // opacity: .5;
             
-            h1{
-                color: $orange;
-
+            .opacity{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                padding-left: 20px; 
+                background: $grey;
+                opacity: .5;
+                
+                h1{
+                    color: $orange;
+                    z-index: 2;
+                }
+    
+                .overcoming{
+                    margin-bottom: 20px;
+                    font-size: 32px;
+                }
+    
+                .seasonal, .allergies{
+                    font-size: 96px;
+                }
             }
-
-            .overcoming{
-                margin-bottom: 20px;
-                font-size: 32px;
-            }
-
-            .seasonal, .allergies{
-                font-size: 96px;
-            }
+            
 
             .btn-content{
             
@@ -68,12 +76,8 @@ $text: #2C2E3F;
                     font-weight: bold;
                     font-size: 12px;
                 }
-
-                // .arrow{
-                //     // margin-left: 40px;
-                //     // background: green;
-                // }
             }
+            
         } 
     } 
 
