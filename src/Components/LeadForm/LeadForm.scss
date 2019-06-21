@@ -72,11 +72,8 @@ $text: #2C2E3F;
             }
 
             .sign-up-btn{
-                width: 95%;
-                height: 40px;
-                margin: 0px 0px 5px 0px;
-                border:none;
-                color: $grey;
+                @extend .input-name;
+                width: 95.5%;
                 text-align: center;
                 background: rgb(17, 27, 48)
 

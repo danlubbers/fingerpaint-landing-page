@@ -34,9 +34,11 @@ export default class LeadForm extends Component{
     }
 
     onClick() {
+        // This checks for empty input fields and if so gives an alert
         if(this.state.name === '' || this.state.email === '') {
             alert('You must fill out the provided fields for submission');
 
+        // this checks for valid email syntax using regex and gives and alert if not
         } else if (!/^\S+@\S+\.\S+$/.test(this.state.email)) {
             alert('You must use valid email syntax!');
 
